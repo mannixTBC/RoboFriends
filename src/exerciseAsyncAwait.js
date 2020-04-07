@@ -2,13 +2,12 @@
 
 // #1) Convert the below promise into async await
 fetch('https://swapi.co/api/starships/9/')
-  .then(response => response.json())
+  .then( response => response.json())
   .then(console.log)
 
 const getData = async function(){
   const response = await('https://swapi.co/api/starships/9/')
   const data = response.json()
-  console.log(data)
 }
 // #2) ADVANCED: Update the function below from the video to also have
 // async await for this line: fetch(url).then(resp => resp.json())
